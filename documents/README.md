@@ -23,6 +23,8 @@
 
 ## TODO Section
 The todo section is for me to make a list of things to solve during this setup process
+1) Python 3.6 is not installed onto the local machine. Find out how to install it manually or use docker containers.
+2) The 'F' notation is not supported on python.3.5 (e.g. f'Hello,..... ). Use a work around for now.
 
 ### Setup Python 3.6 On local machine.
 The local machine does not have 3.6 installed. Consider installing alongside 3.5 or using
