@@ -2,7 +2,7 @@
 
 ## Useful Links
 
-[Flask](http://flask.pocoo.org)
+For the Flask project look at [Flask](http://flask.pocoo.org)
 
 [Connexion](http://connexion.readthedocs.io/en/latest)
 
