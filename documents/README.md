@@ -3,8 +3,11 @@
 ## Useful Links
 
 [Flask](http://flask.pocoo.org)
+
 [Connexion](http://connexion.readthedocs.io/en/latest)
+
 [Flask Injector](http://pypi.org/project/Flask-Injector)
+
 [Couch DB](http://couchdb.apache.org/)
 
 ## Setup Tasks
