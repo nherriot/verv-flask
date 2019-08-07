@@ -44,6 +44,17 @@ Create virtual environment, project directory and readme file with:
 `
 
 ### Task 2 Setup github repo for this project
+Setup a github repo for the project.
+Create readme file.
+
+
+### Task 3 Setup Flask
+Get flask installed onto the system.
+Ensure the development server can be run with a hello world app.
+
+### Setup Connexion For Flask
+Look up the Connexion plugin.
+Find out how it works.
 
 
 
