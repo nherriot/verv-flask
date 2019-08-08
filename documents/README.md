@@ -15,8 +15,9 @@ The non SQL DB which uses string value pairs and JSON to define attributes calle
 1. Setup a virtual environment for python 3.x
 2. Setup a github repo for this project
 2. Use pip to install Flask.
-3. Use pip to install Flask-Injector
-4. Setup and install CouchDB
+3. Use pip to install Connexion
+4. Use pip to install Flask-Injector
+5. Setup and install CouchDB
 
 ## Work To Complete
 1. Create an endpoint 'getproduct'
