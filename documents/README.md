@@ -6,9 +6,9 @@ For the Flask project look at [Flask](http://flask.pocoo.org)
 
 The OpenAPI (swagger) library for Flask called [Connexion](http://connexion.readthedocs.io/en/latest)
 
-[Flask Injector](http://pypi.org/project/Flask-Injector)
+The Flask dependancy injector, to make testing easier by removing the need for global Flask objects called [Flask Injector](http://pypi.org/project/Flask-Injector)
 
-[Couch DB](http://couchdb.apache.org/)
+The non SQL DB which uses string value pairs and JSON to define attributes called [Couch DB](http://couchdb.apache.org/)
 
 ## Setup Tasks
 
