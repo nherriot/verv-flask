@@ -4,7 +4,7 @@
 
 For the Flask project look at [Flask](http://flask.pocoo.org)
 
-[Connexion](http://connexion.readthedocs.io/en/latest)
+The OpenAPI (swagger) library for Flask called [Connexion](http://connexion.readthedocs.io/en/latest)
 
 [Flask Injector](http://pypi.org/project/Flask-Injector)
 
