@@ -54,13 +54,10 @@ https://github.com/nherriot/verv-flask/edit/master/documents/README.md
 Create a .gitignore file to stop IDE and python cache, compile and xml files being stored on github.
 
 ### Task 3 Setup Flask
-Get flask installed onto the system.
-
-Ensure the development server can be run with a hello world app.
-
-Create a scratch area for testing 'hello world' parts of the system.
-
-Create a requirements.txt to keep track of packages installed.
+1. Get flask installed onto the system.
+2. Ensure the development server can be run with a hello world app.
+3. Create a scratch area for testing 'hello world' parts of the system.
+4. Create a requirements.txt to keep track of packages installed.
 
 
 ### Task 4 Setup Connexion For Flask
