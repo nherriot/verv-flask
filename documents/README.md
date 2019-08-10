@@ -45,13 +45,13 @@ Create virtual environment, project directory and readme file with:
 ```
 
 ### Task 2 Setup github repo for this project
-Setup a github repo for the project.
-Create readme file.
-**Done**
+~~Setup a github repo for the project~~ **Done**
+
+~~Create readme file~~ **Done**
 ```bash
 https://github.com/nherriot/verv-flask/edit/master/documents/README.md
 ```
-
+Create a .gitignore file to stop IDE and python cache, compile and xml files being stored on github.
 
 ### Task 3 Setup Flask
 Get flask installed onto the system.
