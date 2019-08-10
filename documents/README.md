@@ -19,9 +19,6 @@ The non SQL DB which uses string value pairs and JSON to define attributes calle
 4. Use pip to install Flask-Injector
 5. Setup and install CouchDB
 
-## Work To Complete
-1. Create an endpoint 'getproduct'
-
 ## TODO Section
 The todo section is for me to make a list of things to solve during this setup process
 1) Python 3.6 is not installed onto the local machine. Find out how to install it manually or use docker containers.
