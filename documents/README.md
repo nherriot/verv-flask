@@ -27,6 +27,7 @@ The todo section is for me to make a list of things to solve during this setup p
 1) Python 3.6 is not installed onto the local machine. Find out how to install it manually or use docker containers.
 2) ~~The 'F' notation is not supported on python.3.5 (e.g. f'Hello,..... ).~~ Use a work around for now. Using "string {}".format(x) for now.
 3) Setup a .gitignore to remove all the IDE and pycache files from git.
+4) Create a requirements.txt file to hold all the installed python packages used on your system.
 
 
 ### Setup Python 3.6 On local machine.
@@ -50,9 +51,9 @@ Create virtual environment, project directory and readme file with:
 Setup a github repo for the project.
 Create readme file.
 **Done**
-`bash
+```bash
 https://github.com/nherriot/verv-flask/edit/master/documents/README.md
-`
+```
 
 
 ### Task 3 Setup Flask
@@ -74,13 +75,13 @@ Make a hello world test case in the scratch area.
 ### Task 6 Create A Getproduct Endpoint
 Make a simple Flask server that allows a GET request on an endpoint called /getproduct
 Hard code the endpoint as a json file with attributes like:
-`json
+```json
    properties
       _id: {type:string}
       prodname: {type:string}
       catagory: {type:string}
       quantity: {type:number}
-`
+```
 
 ### Task 7 Create A Connexsions Endpoint Using Swagger
 Make the same endpoint as above, but use the connexions Flask plugin
