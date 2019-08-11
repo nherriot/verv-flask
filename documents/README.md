@@ -21,15 +21,25 @@ The non SQL DB which uses string value pairs and JSON to define attributes calle
 
 ## TODO Section
 The todo section is for me to make a list of things to solve during this setup process
-1) Python 3.6 is not installed onto the local machine. Find out how to install it manually or use docker containers.
-2) ~~The 'F' notation is not supported on python.3.5 (e.g. f'Hello,..... ).~~ Use a work around for now. Using "string {}".format(x) for now.
+1) ~~Python 3.6 is not installed onto the local machine. Find out how to install it manually or use docker containers.~~ **Done**
+2) ~~The 'F' notation is not supported on python.3.5 (e.g. f'Hello,..... ).~~ Use a work around for now. Using "string {}".format(x) for now. **Done**
 3) Setup a .gitignore to remove all the IDE and pycache files from git.
 4) Create a requirements.txt file to hold all the installed python packages used on your system.
 
 
 ### Setup Python 3.6 On local machine.
-The local machine does not have 3.6 installed. Consider installing alongside 3.5 or using
-a docker container.
+~~The local machine does not have 3.6 installed. Consider installing alongside 3.5 or using
+a docker container.~~ **Done**
+
+Use precompiled and setup PPA of python 3.6 to install onto a Ubuntu 14.x based machine. Then used virtualenv to setup python 3.6. Commands I used were:
+
+```bash
+
+sudo add-apt-repository ppa:deadsnakes/ppa
+ 1959  sudo apt-get update
+ 1960  sudo apt-get install python3.6
+```
+
 
 ## Tasks
 This section is a real time diary of what you did in setting up the system
