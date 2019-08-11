@@ -36,8 +36,8 @@ Use precompiled and setup PPA of python 3.6 to install onto a Ubuntu 14.x based 
 ```bash
 
 sudo add-apt-repository ppa:deadsnakes/ppa
- 1959  sudo apt-get update
- 1960  sudo apt-get install python3.6
+sudo apt-get update
+sudo apt-get install python3.6
 ```
 
 
@@ -46,10 +46,12 @@ This section is a real time diary of what you did in setting up the system
 
 
 ### Task 1 Setup Virtual Environment
-Create virtual environment, project directory and readme file with:
+~~Create virtual environment, project directory and readme file~~ **Done**
+
+Using commands:
 
 ``` bash
-	/> mkvirtualenv --python=/usr/bin/python3.6 verv-flask3-6
+	/> mkvirtualenv --python=/usr/bin/python3.6 verv
 	/> mkdir project
 	/> mkdir documents
 	/> touch documents/README.md
@@ -62,7 +64,18 @@ Create virtual environment, project directory and readme file with:
 ```bash
 https://github.com/nherriot/verv-flask/edit/master/documents/README.md
 ```
-Create a .gitignore file to stop IDE and python cache, compile and xml files being stored on github.
+~~Create a .gitignore file to stop IDE and python cache, compile and xml files being stored on github.~~ **Done**
+Using a .gitignore as:
+
+```
+# ignore .idea directory for pycharm IDE
+**/.idea
+
+# ignore __pycache__ files created by Flask
+**/__pycache__
+
+```
+
 
 ### Task 3 Setup Flask
 1. Get flask installed onto the system.
