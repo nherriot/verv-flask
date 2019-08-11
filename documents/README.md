@@ -12,10 +12,10 @@ The non SQL DB which uses string value pairs and JSON to define attributes calle
 
 ## Setup Tasks
 
-1. ~~Setup a virtual environment for python 3.x~~ **done**
-2. ~~Setup a github repo for this project~~ **done**
-2. ~~Use pip to install Flask.~~ **done**
-3. Use pip to install Connexion
+1. ~~Setup a virtual environment for python 3.x~~ **Done**
+2. ~~Setup a github repo for this project~~ **Done**
+2. ~~Use pip to install Flask.~~ **Done**
+3. ~~Use pip to install Connexion~~ **Done**
 4. Use pip to install Flask-Injector
 5. Setup and install CouchDB
 
@@ -23,8 +23,8 @@ The non SQL DB which uses string value pairs and JSON to define attributes calle
 The todo section is for me to make a list of things to solve during this setup process
 1) ~~Python 3.6 is not installed onto the local machine. Find out how to install it manually or use docker containers.~~ **Done**
 2) ~~The 'F' notation is not supported on python.3.5 (e.g. f'Hello,..... ).~~ Use a work around for now. Using "string {}".format(x) for now. **Done**
-3) Setup a .gitignore to remove all the IDE and pycache files from git.
-4) Create a requirements.txt file to hold all the installed python packages used on your system.
+3) ~~Setup a .gitignore to remove all the IDE and pycache files from git.~~ **Done**
+4) ~~Create a requirements.txt file to hold all the installed python packages used on your system.~~ **Done**
 
 
 ### Setup Python 3.6 On local machine.
@@ -47,6 +47,7 @@ This section is a real time diary of what you did in setting up the system
 
 ### Task 1 Setup Virtual Environment
 ~~Create virtual environment, project directory and readme file~~ **Done**
+
 
 Using commands:
 
@@ -78,13 +79,45 @@ Using a .gitignore as:
 
 
 ### Task 3 Setup Flask
-1. Get flask installed onto the system.
-2. Ensure the development server can be run with a hello world app.
-3. Create a scratch area for testing 'hello world' parts of the system.
-4. Create a requirements.txt to keep track of packages installed.
+1. ~~Get flask installed onto the system.~~ **Done**
 
+
+Using the command:
+```bash
+   $ pip install -U Flask
+```
+
+2. ~~Ensure the development server can be run with a hello world app.~~ **Done**
+
+Using the file /server/hello.py
+Start the dev server with:
+```bash
+
+   $ python hello.py
+   * Serving Flask app "hello" (lazy loading)
+   * Environment: production
+     WARNING: This is a development server. Do not use it in a production deployment.
+     Use a production WSGI server instead.
+   * Debug mode: off
+   * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+```
+
+3. Create a scratch area for testing 'hello world' parts of the system.
+4. ~~Create a requirements.txt to keep track of packages installed.~~ **Done**
+
+Using the command:
+```bash
+   $ pip freeze > requirements.txt
+```
 
 ### Task 4 Setup Connexion For Flask
+~~Install the Connexion plugin~~ **Done**
+
+Using the command:
+```bash
+   pip install connexion[swagger-ui]
+```
+
 Look up the Connexion plugin.
 Find out how it works.
 Make a hello world to prove it works, and place in the scratch area
