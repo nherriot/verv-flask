@@ -34,6 +34,7 @@ a docker container.
 ## Tasks
 This section is a real time diary of what you did in setting up the system
 
+
 ### Task 1 Setup Virtual Environment
 Create virtual environment, project directory and readme file with:
 
