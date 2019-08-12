@@ -6,20 +6,27 @@ info:
 host: api.verv.org
 schemes:
   - http
-basePath: /
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+basePath: "/v1.0"
+# Paths supported by the server application
 paths:
   /getproduct:
     get:
-      summary: Get VERV product data
+      operationId: "verv_product.read"
+      summary: "Get VERV product data"
       parameters:
         - in: query
           name: prod_id
-          type: number
+          type: string
           description: 'The product ID of the item to search for, i.e. 1234'
-          default: 1234
+          default: "1234"
       responses:
         '200':
-          description: Success response
+          description: "Successful read product ID operation"
           schema:
             type: object
             properties:
