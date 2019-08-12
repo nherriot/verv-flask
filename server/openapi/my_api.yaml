@@ -1,0 +1,37 @@
+swagger: '2.0'
+info:
+  description: A Simple VERV Product Description API. Describes the product ID, product name, category, and quantity of the products on the system.
+  title: Get VERV Product Information
+  version: v1
+host: api.verv.org
+schemes:
+  - http
+basePath: /
+paths:
+  /getproduct:
+    get:
+      summary: Get VERV product data
+      parameters:
+        - in: query
+          name: prod_id
+          type: number
+          description: 'The product ID of the item to search for, i.e. 1234'
+          default: 1234
+      responses:
+        '200':
+          description: Success response
+          schema:
+            type: object
+            properties:
+              _id:
+                type: string
+                example: 1234
+              prodname:
+                type: string
+                example: smart meter v1
+              category:
+                type: string
+                example: electric meter
+              quantity:
+                type: number
+                example: 101
