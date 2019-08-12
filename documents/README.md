@@ -118,9 +118,35 @@ Using the command:
    pip install connexion[swagger-ui]
 ```
 
-Look up the Connexion plugin.
-Find out how it works.
-Make a hello world to prove it works, and place in the scratch area
+~~Look up the Connexion plugin and follow guides~~. **Done**
+
+~~Find out how it works.~~ **Done**
+
+~~Make a hello world to prove it works, and place in the scratch area~~ **Done**
+
+To run do the following:
+```bash
+	$ pip install -r requirements.txt
+	$ python verv.py
+```
+
+To test do the following:
+```bash
+	$ curl -X GET --header 'Accept: application/json' 'http://localhost:8000/v1.0/getproduct?prod_id=123'
+	{
+	  "_id": "123",
+  	  "category": "Electric Meter",
+  	  "prodname": "verv smartmeter v1",
+  	  "quantity": 101
+	}
+```
+
+To test a failure case do the following:
+```bash
+	curl -X GET --header 'Accept: application/json' 'http://localhost:8000/v1.0/getproduct?prod_id=1234'
+	"No product with product ID: 1234"
+```
+
 
 ### Task 5 Setup Flask-Injector
 Look up the plugin.
@@ -128,8 +154,8 @@ Find out how it works.
 Make a hello world test case in the scratch area.
 
 ### Task 6 Create A Getproduct Endpoint
-Make a simple Flask server that allows a GET request on an endpoint called /getproduct
-Hard code the endpoint as a json file with attributes like:
+~~Make a simple Flask server that allows a GET request on an endpoint called /getproduct~~
+~~Hard code the endpoint as a json file with attributes like:~~ **Done**
 ```json
    properties
       _id: {type:string}
@@ -138,6 +164,39 @@ Hard code the endpoint as a json file with attributes like:
       quantity: {type:number}
 ```
 
+To test do the following:
+```bash
+	$ curl -X GET --header 'Accept: application/json' 'http://localhost:8000/v1.0/getproduct?prod_id=123'
+	{
+	  "_id": "123",
+  	  "category": "Electric Meter",
+  	  "prodname": "verv smartmeter v1",
+  	  "quantity": 101
+	}
+
+```
+
 ### Task 7 Create A Connexsions Endpoint Using Swagger
-Make the same endpoint as above, but use the connexions Flask plugin
+
+~~Make the same endpoint as above, but use the connexions Flask plugin.~~ **Done**
+
+To test do the following:
+```bash
+	$ curl -X GET --header 'Accept: application/json' 'http://localhost:8000/v1.0/getproduct?prod_id=123'
+	{
+	  "_id": "123",
+  	  "category": "Electric Meter",
+  	  "prodname": "verv smartmeter v1",
+  	  "quantity": 101
+	}
+
+```
+
+### Task 8 Create A Link To CouchDB Update 
+
+1. Install CouchDB.
+2. Make README.md on how to install and setup.
+3. Do hello world of updating and pulling values from CoucheDB.
+4. Link your 'read' function to reading values from CoucheDB.
+5. Update the README file to show how this is tested.
 
