@@ -194,7 +194,21 @@ To test do the following:
 
 ### Task 8 Create A Link To CouchDB Update 
 
-1. Install CouchDB.
+1. ~~Install CouchDB.~~ **Done*
+
+To install and test CouchDB from the command line on most debian based linux systems do:
+
+```bash
+	$ sudo apt-get install couchdb
+	$ pip install Flask_CouchDB
+	$ curl http://127.0.0.1:5984/
+	{"couchdb":"Welcome",
+	"uuid":"83aeb28699c88f9d5f08c1f2f32e361c",
+	"version":"1.6.0",
+	"vendor":{"name":"Ubuntu","version":"15.10"}}
+```
+
+
 2. Make README.md on how to install and setup.
 3. Do hello world of updating and pulling values from CoucheDB.
 4. Link your 'read' function to reading values from CoucheDB.
